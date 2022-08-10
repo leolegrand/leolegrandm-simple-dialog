@@ -13,7 +13,7 @@
     "dist",
     "README.md"
   ],
-  "version": "0.1.0",
+  "version": "0.1.2",
   "author": "Léo LM",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",

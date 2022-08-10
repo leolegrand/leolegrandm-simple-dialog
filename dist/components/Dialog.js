@@ -50,6 +50,18 @@ const Dialog = _ref => {
     content: 'Oops ! Something went wrong.',
     cta: 'Try again !'
   }];
+  (0, _react.useEffect)(() => {
+    const handleKeyPress = event => {
+      if (event.keyCode === 27) {
+        setShown(false);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyPress);
+    return () => {
+      window.removeEventListener('keydown', handleKeyPress);
+    };
+  }, []);
   let option;
 
   if (optionParams) {
