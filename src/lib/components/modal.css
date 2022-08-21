@@ -84,6 +84,7 @@ body {
 }
 
 .modal__body {
+  margin-top: 20px;
   margin-bottom: 40px;
   font-size: 18px;
 }
